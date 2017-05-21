@@ -1,5 +1,9 @@
 # GoCD Docker Compose
 
+This is a docker-compose script to run [GoCD-Server](https://github.com/gocd/docker-gocd-server) and one [GoCD-Worker (Ubuntu 16.04)](https://github.com/gocd/docker-gocd-agent-ubuntu-16.04) together.
+
+## Getting Started
+
 To start GoCD
 ```
 docker-compose up -d
