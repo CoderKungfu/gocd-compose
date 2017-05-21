@@ -1,0 +1,8 @@
+FROM gocd/gocd-agent-ubuntu-16.04:v17.4.0
+
+ADD "https://storage.googleapis.com/golang/go1.7.5.linux-amd64.tar.gz" /tmp/go1.7.5.linux-amd64.tar.gz
+
+RUN tar -C /usr/local -xzf /tmp/go1.7.5.linux-amd64.tar.gz
+
+ENV GOROOT=/usr/local/go
+ENV PATH=$PATH:$GOROOT/bin
